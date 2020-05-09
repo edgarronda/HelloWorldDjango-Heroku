@@ -190,7 +190,7 @@ Aqui haremos un par de modificaciones, recuerdas que en Heroku asignamos variabl
 ```
 
 ## Configurar Procfile
-El siguiente paso es crear nuestro archivo **Procfile**, este archivo son las instrucciones que le damos a Heroku cada que se hace deploy.
+El siguiente paso es crear nuestro archivo **Procfile**, este archivo son las instrucciones que le damos a Heroku de que va a correr un proceso web con gunicorn, tomar en cuenta que es case sensitive, asi que iniciemos con mayuscula el nombre del archivo. "web_project" en este archivo es el nombre de nuestro project donde se encuentra nuestro archivo de settings.py.
 
 ```python
     web: gunicorn web_project.wsgi --log-file -
